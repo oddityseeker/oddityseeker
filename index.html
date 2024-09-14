@@ -8,132 +8,142 @@
         /* Общие стили */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #ffffff;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
         }
 
         h1, h2 {
-            color: #f0f0f0;
+            font-family: 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #39ff14;
         }
 
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+        h1 {
+            font-size: 3em;
         }
 
-        a:hover {
-            text-decoration: underline;
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            color: #e0e0e0;
+            font-size: 1.1em;
         }
 
         /* Контейнер сайта */
         .container {
-            max-width: 1800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        /* Верхний блок "О себе" */
-        .about {
+        /* Верхний блок с приветствием */
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #1a1a1a;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 40px;
+            padding: 50px;
+            background-color: #141414;
+            border-radius: 15px;
         }
 
-        .about-text {
-            max-width: 70%;
+        .header h1 {
+            margin: 0;
         }
 
-        .about img {
+        .header p {
+            max-width: 60%;
+            font-size: 1.2em;
+        }
+
+        .header img {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
             object-fit: cover;
         }
 
-        /* Секция "Проекты" */
+        /* Раздел "Проекты" */
         .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            margin-top: 50px;
         }
 
         .project {
-            background-color: #2c2c2c;
-            padding: 20px;
-            border-radius: 8px;
             display: flex;
-            flex-basis: 48%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #1e1e1e;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
         }
 
         .project img {
-            width: 120px;
-            height: 120px;
+            width: 300px;
             object-fit: cover;
-            margin-right: 20px;
-            border-radius: 8px;
         }
 
-        .project h3 {
-            margin-top: 0;
+        .project-info {
+            padding: 20px;
         }
 
-        .project p {
-            margin: 10px 0;
+        .project-info h2 {
+            margin: 0 0 10px 0;
         }
 
-        /* Адаптивность для мобильных устройств */
+        .project-info p {
+            margin: 0 0 20px 0;
+        }
+
+        /* Адаптивность */
         @media (max-width: 768px) {
-            .about {
+            .header {
                 flex-direction: column;
-                align-items: flex-start;
                 text-align: center;
             }
 
-            .about img {
+            .header img {
                 margin-top: 20px;
             }
 
             .project {
-                flex-basis: 100%;
+                flex-direction: column;
+            }
+
+            .project img {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Верхний блок "О себе" -->
-        <section class="about">
-            <div class="about-text">
+        <!-- Приветственный блок -->
+        <section class="header">
+            <div>
                 <h1>Oddity Seeker</h1>
-                <p>Привет! Я Oddity Seeker, занимаюсь программированием, создаю креативные проекты и контент. На этой странице ты найдёшь мои работы.</p>
+                <p>Я создаю современные и инновационные проекты, которые выделяются своим стилем и функциональностью.</p>
             </div>
-            <img src="your-photo-url.jpg" alt="здесь должна быть  фотка, но гит отказался её загружат, у меня есть две идеи почему так произошло">
+            <img src="your-photo-url.jpg" alt="Oddity Seeker">
         </section>
 
         <!-- Проекты -->
         <section class="projects">
             <div class="project">
-                <img src="project1-photo-url.jpg" alt="не прогрузилось">
-                <div>
-                    <h3>Проект 1</h3>
-                    <p>Описание первого проекта. Этот проект демонстрирует мои навыки в программировании и креативном подходе к решению задач.</p>
-                    <a href="#">Смотреть проект</a>
+                <img src="project1-photo-url.jpg" alt="Проект 1">
+                <div class="project-info">
+                    <h2>Проект 1</h2>
+                    <p>Описание проекта. Яркий и креативный подход к созданию сайтов и приложений.</p>
+                    <a href="#">Подробнее</a>
                 </div>
             </div>
             <div class="project">
-                <img src="project2-photo-url.jpg" alt="не прогрузилось">
-                <div>
-                    <h3>Проект 2</h3>
-                    <p>Описание второго проекта. Здесь я применил свои знания для создания интересного и полезного инструмента.</p>
-                    <a href="#">Смотреть проект</a>
+                <img src="project2-photo-url.jpg" alt="Проект 2">
+                <div class="project-info">
+                    <h2>Проект 2</h2>
+                    <p>Мой второй проект демонстрирует инновационные технологии в разработке веб-приложений.</p>
+                    <a href="#">Подробнее</a>
                 </div>
             </div>
             <!-- Добавь больше проектов по мере необходимости -->
