@@ -11,6 +11,6 @@
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=oddityseeker&theme=dark)](https://git.io/streak-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=oddityseeker&layout=compact)](https://github.com/oddityseeker/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=oddityseeker&layout=compact&theme=dark)](https://github.com/oddityseeker/github-readme-stats)
 
 [![codewars](https://www.codewars.com/users/oddityseeker/badges/large)](https://www.codewars.com/users/oddityseeker)
