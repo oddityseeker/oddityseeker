@@ -8,3 +8,4 @@
 
 💼 опыт работы:  только свои проекты(не все репозитории видны, на самом деле их там не мало)
 
+[![codewars](https://www.codewars.com/users/oddityseeker/badges/large)](https://www.codewars.com/users/oddityseeker)
